@@ -6,6 +6,18 @@ import styled from 'styled-components';
 import Header from "./header"
 import "./reset.css"
 
+const BodyWrapper = styled.div`
+  margin: 0 auto;
+  max-width: 960;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+  border: 2px solid green;
+`
+
+const FooterWrapper = styled.footer`
+  border: 2px solid red;
+`
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -20,19 +32,12 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
+        <BodyWrapper>
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}
-          </footer>
-        </div>
+        </BodyWrapper>
+        <FooterWrapper>
+          © {new Date().getFullYear()}
+        </FooterWrapper>
       </>
     )}
   />

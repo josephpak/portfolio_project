@@ -4,8 +4,7 @@ import React from "react";
 import styled from "styled-components";
 
 const HeaderContainer = styled.div`
-  margin-bottom: 1.45rem;
-  border: 1px solid black;
+  border: 2px dotted black;
   height: 250px;
   display: flex;
   align-items: center;
