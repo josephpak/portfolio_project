@@ -4,27 +4,46 @@ import styled from 'styled-components';
 import gatsbylogo from "../../logos/gatsby.png";
 import reactlogo from "../../logos/react.png";
 import sclogo from "../../logos/styled-components.png"
+import mac from "../../images/mac-transparent.png"
 
 const CardWrapper = styled.div`
     font-size: 1rem;
     display: flex;
     justify-content: space-between;
+    height: 50px;
+    align-items: center;
 `
 
 const TechnologiesWrapper = styled.div`
     img {
-        max-height: 50px;
+        max-height: 40px;
     }
+`
+
+const DemoWrapper = styled.div`
+    img {
+        max-height: 250px;
+        position: relative;
+        top: -75px;
+        align-self: flex-end;
+    }    
+`
+
+const CaptionWrapper = styled.div`
+    align-items: center;
+    padding: 0 30px;
 `
 
 export default function ProjectCard() {
   return (
     <CardWrapper>
-      <div>
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-      </div>
+      <DemoWrapper>
+        <img src={mac}/>
+      </DemoWrapper>  
+      <CaptionWrapper>
+        <h1>Retaino</h1>
+        <p>Your personal Pensieve for the Internet</p>
+      </CaptionWrapper>
       <TechnologiesWrapper>
           <img src={gatsbylogo}/>
           <img src={reactlogo}/>
