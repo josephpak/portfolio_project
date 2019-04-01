@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => (
   <HeaderContainer>
     <HeaderContent>
       <NavBar/>
-      <img src={profile}/>
+      <img src={profile} alt="profile-pic"/>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?
       </p>
