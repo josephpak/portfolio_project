@@ -9,7 +9,8 @@ import styled from 'styled-components'
 const BodyContent = styled.div`
   margin: 25px 0;
   margin-right: 124px;
-  margin-top: 150px;
+  margin-top: 75px;
+  margin-bottom: 112px;
   width: 1000px;
   padding: 2rem 4rem;
   background: white;
