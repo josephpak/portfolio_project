@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const NavBarWrapper = styled.div`
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
     height: 100px;
     min-width: 100px;
     justify-content: space-between;

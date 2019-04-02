@@ -5,7 +5,7 @@ export const BodyWrapper = styled.div`
   background-color: #B2DBBF;
   border: 2px dashed black;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 `
 
 export const FooterWrapper = styled.footer`

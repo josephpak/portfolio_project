@@ -8,7 +8,6 @@ import styled from 'styled-components'
 
 const BodyContent = styled.div`
   margin: 25px 0;
-  margin-right: 124px;
   margin-top: 75px;
   margin-bottom: 112px;
   width: 1000px;
@@ -20,7 +19,7 @@ const BodyContent = styled.div`
 
 const ProjectsPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
     <BodyContent>
       <ProjectCard />
     </BodyContent>

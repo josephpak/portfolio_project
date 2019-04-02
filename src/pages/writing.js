@@ -2,6 +2,9 @@ import React from "react"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
+import {
+  UnderConstruction
+} from "../page-styles/UnderConstruction"
 import SEO from "../components/seo"
 // import styled from 'styled-components'
 
@@ -17,7 +20,10 @@ import SEO from "../components/seo"
 
 const WritingsPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Writing" keywords={[`gatsby`, `application`, `react`]} />
+    <UnderConstruction>
+      <h1>Under Construction!</h1>
+    </UnderConstruction>
   </Layout>
 )
 

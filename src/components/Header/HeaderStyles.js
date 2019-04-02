@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-  border: 2px dotted black;
+  /* border: 2px dotted black; */
   height: 400px;
   display: flex;
   align-items: center;
 `
 
 export const HeaderContent = styled.div`
+  @import url('https://fonts.googleapis.com/css?family=Poppins');
+  /* border: 1px solid black; */
   margin: 0 auto;
   margin: 0 95px;
-  border: 1px solid black;
   width: 100%;
   height: 150px;
   display: flex;
@@ -25,6 +26,7 @@ export const HeaderContent = styled.div`
   p {
     padding: 0 25px;
     line-height: 2;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    font-family: "Poppins"
   }
 ` 
