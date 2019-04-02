@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
       <NavBar/>
       <img src={profile} alt="profile-pic"/>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?
+        Hi! I’m Joe. I was most recently a product manager at FiscalNote where I led research and development for the company’s relationship management software and data products.
       </p>
     </HeaderContent>
   </HeaderContainer>
