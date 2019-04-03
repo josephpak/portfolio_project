@@ -6,6 +6,8 @@ import ProjectCard from "../components/ProjectCard/ProjectCard"
 import SEO from "../components/seo"
 import styled from 'styled-components'
 
+
+
 const BodyContent = styled.div`
   margin: 25px 0;
   margin-top: 75px;
@@ -21,7 +23,9 @@ const ProjectsPage = () => (
   <Layout>
     <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
     <BodyContent>
+      
       <ProjectCard />
+      
     </BodyContent>
   </Layout>
 )
