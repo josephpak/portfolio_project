@@ -7,7 +7,6 @@ import "./reset.css"
 
 import {
   BodyWrapper,
-  FooterWrapper
 } from "./Layout/LayoutStyles"
 
 const Layout = ({ children }) => (

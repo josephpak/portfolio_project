@@ -47,3 +47,22 @@ export const ContentWrapper = styled.div`
     width: 550px;
     align-items: center;
 `
+
+export const Front = styled.img`
+  height: 75px;
+  right: 5%;
+  position: absolute;
+`
+
+export const Back = styled.img`
+  height: 75px;
+  left: 5%;
+  position: absolute;
+  cursor: pointer;
+`
+
+export const ProjectWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+`

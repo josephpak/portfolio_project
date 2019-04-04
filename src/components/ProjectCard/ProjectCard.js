@@ -1,67 +1,22 @@
 import React from 'react';
-import styled from 'styled-components'
 
-import gatsbylogo from "../../logos/gatsby.png";
-import reactlogo from "../../logos/react.png";
-import sclogo from "../../logos/styled-components.png"
-import mac from "../../images/mac-transparent.png"
-
-import back from "./back-arrow.png"
-import forward from "./forward-arrow.png"
+import back from "../../images/back-arrow.png"
+import forward from "../../images/forward-arrow.png"
 
 import {
     CardWrapper,
     DemoWrapper,
     CaptionWrapper,
     TechnologiesWrapper,
-    ContentWrapper
+    ContentWrapper,
+    ProjectWrapper,
+    Front,
+    Back
 } from "./ProjectStyles";
 
-const carouselData = [
-  {
-    image: mac,
-    title: "Retaino",
-    description: "Your personal Pensieve for the Internet",
-    technologies: [reactlogo, sclogo]
-  },
-  {
-    image: mac,
-    title: "joepak.dev",
-    description: "My personal website and portfolio",
-    technologies: [gatsbylogo, reactlogo, sclogo]
-  },
-  {
-    image: mac,
-    title: "tippr",
-    description: "A tipping app for waiters",
-    technologies: [reactlogo, sclogo]
-  },
-  {
-    image: mac,
-    title: "Lift Journal",
-    description: "A weightlifting journal app",
-    technologies: [reactlogo, sclogo]
-  }
-]
-
-const Front = styled.img`
-  height: 75px;
-  right: 5%;
-  position: absolute;
-`
-
-const Back = styled.img`
-  height: 75px;
-  left: 5%;
-  position: absolute;
-  cursor: pointer;
-`
-
-const ProjectWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-`
+import {
+  carouselData
+} from "./projectdata"
 
 class ProjectCard extends React.Component {
   constructor(props){
@@ -131,7 +86,7 @@ class ProjectCard extends React.Component {
             </CaptionWrapper>
             <TechnologiesWrapper>
                 {technologies.map((el, i) => (
-                  <img src={el} key={i} />
+                  <img src={el} key={i} alt="Technologies Used"/>
                 ))}
             </TechnologiesWrapper>
           </ContentWrapper>  
