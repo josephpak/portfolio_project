@@ -6,12 +6,14 @@ export const CardWrapper = styled.div`
     justify-content: space-between;
     height: 50px;
     align-items: center;
+    width: 100%;
 `
 
 export const TechnologiesWrapper = styled.div`
     img {
         max-height: 30px;
     }
+    min-width: 35px;
 `
 
 export const DemoWrapper = styled.div`
@@ -29,6 +31,7 @@ export const CaptionWrapper = styled.div`
 
     h1 {
         font-size: 1.2rem;
+        font-weight: 700;
     }
 
     p {
@@ -36,4 +39,11 @@ export const CaptionWrapper = styled.div`
         font-size: 1rem;
         line-height: 1.2;
     }
+`
+
+export const ContentWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    align-items: center;
 `

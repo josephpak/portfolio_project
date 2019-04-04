@@ -13,7 +13,8 @@ import {
     CardWrapper,
     DemoWrapper,
     CaptionWrapper,
-    TechnologiesWrapper
+    TechnologiesWrapper,
+    ContentWrapper
 } from "./ProjectStyles";
 
 const carouselData = [
@@ -26,19 +27,19 @@ const carouselData = [
   {
     image: mac,
     title: "joepak.dev",
-    description: "My personal portfolio",
+    description: "My personal website and portfolio",
     technologies: [gatsbylogo, reactlogo, sclogo]
   },
   {
     image: mac,
     title: "tippr",
-    description: "My first Lambda School Build Week project. A tipping app for waiters",
-    technologies: []
+    description: "A tipping app for waiters",
+    technologies: [reactlogo, sclogo]
   },
   {
     image: mac,
     title: "Lift Journal",
-    description: "My second Lambda School Build Week project. A weightlifting journal app",
+    description: "A weightlifting journal app",
     technologies: [reactlogo, sclogo]
   }
 ]
@@ -122,16 +123,18 @@ class ProjectCard extends React.Component {
         <CardWrapper>
           <DemoWrapper>
             <img src={image} alt="demo"/>
-          </DemoWrapper>  
-          <CaptionWrapper>
-            <h1>{title}</h1>
-            <p>{description}</p>
-          </CaptionWrapper>
-          <TechnologiesWrapper>
-              {technologies.map((el, i) => (
-                <img src={el} key={i} />
-              ))}
-          </TechnologiesWrapper>
+          </DemoWrapper>
+          <ContentWrapper>
+            <CaptionWrapper>
+              <h1>{title}</h1>
+              <p>{description}</p>
+            </CaptionWrapper>
+            <TechnologiesWrapper>
+                {technologies.map((el, i) => (
+                  <img src={el} key={i} />
+                ))}
+            </TechnologiesWrapper>
+          </ContentWrapper>  
         </CardWrapper>
         <Front 
         src={forward}

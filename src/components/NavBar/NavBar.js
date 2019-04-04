@@ -18,11 +18,11 @@ export default function NavBar() {
         >
             Projects
         </Link>
-        <Link
+        {/* <Link
             to="/writing"
         >
             Writing
-        </Link>
+        </Link> */}
     </NavBarWrapper>
   )
 }

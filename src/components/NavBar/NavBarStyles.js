@@ -6,7 +6,7 @@ export const NavBarWrapper = styled.div`
     flex-direction: column;
     height: 100px;
     min-width: 100px;
-    justify-content: space-between;
+    justify-content: space-around;
 
     a {
         font-size: 1.2rem;
