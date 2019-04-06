@@ -29,7 +29,8 @@ export const HeaderContent = styled.div`
     padding: 0 25px;
     line-height: 2;
     font-size: 1.8rem;
-    font-family: Feijoa
+    font-family: Feijoa;
+    color: black;
   }
 ` 
 

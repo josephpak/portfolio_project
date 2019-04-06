@@ -1,78 +1,47 @@
 import React from "react"
 // import { Link } from "gatsby"
-import Timeline from "antd/lib/timeline"
+import WorkTimeline from "../components/Timeline/WorkTimeline"
 
 import Layout from "../components/layout"
-import {
-  UnderConstruction
-} from "../page-styles/UnderConstruction"
+
+import climb from "../images/climb.jpg"
 
 import SEO from "../components/seo"
+
+import {
+  BodyWrapper,
+  MainContentWrapper,
+  ContactContentWrapper,
+  ContactContentCard,
+  ContactCardLeft,
+  ContactCardRight,
+  Interests
+} from "../page-styles/AboutMeStyles"
 
 const AboutMe = () => (
   <Layout>
     <SEO title="Hi, I'm Joe Pak" />
-    <div style={{
-      border: '1px dashed black',
-      width: '100%',
-      display: 'flex',
-      flexWrap: 'wrap'
-      }}>
-      <div style={{
-        border: '1px dashed black',
-        width: '100%',
-        display: 'flex'
-      }}>
-        <div style={{
-          border: '1px dotted green',
-          width: '50%',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          height: '400px'
-        }}>
-          <Timeline
-            pending="My next adventure"
-            reverse="true"
-          >
-            <Timeline.Item
-              color="crimson"
-            >Harvard College <br /> A.B. 2014</Timeline.Item>
-            <Timeline.Item>Market Metrics, FactSet <br /> Data Product Analyst</Timeline.Item>
-            <Timeline.Item
-              color="purple"
-            >FiscalNote <br /> Product Manager</Timeline.Item>
-            <Timeline.Item
-              color="red"
-            >Lambda School <br /> Full Stack Web Development 2019</Timeline.Item>
-          </Timeline>
-        </div>
-        <div style={{
-          border: '1px dotted green',
-          width: '50%'
-        }}>
+    <BodyWrapper>
+      <MainContentWrapper>
+        <WorkTimeline />
+        <Interests>
           My Interests
-        </div>
-      </div>
-      <div style={{
-        border: '1px dashed black',
-        width: '100%',
-        display: 'flex'
-      }}>
-        <div style={{
-          border: '1px dotted green',
-          width: '50%'
-        }}>
-          Contact Me
-        </div>
-        <div style={{
-          border: '1px dotted green',
-          width: '50%'
-        }}>
-          Fun Images
-        </div>
-      </div>
-    </div>
+        </Interests>
+      </MainContentWrapper>
+      <ContactContentWrapper>
+        <ContactContentCard>
+          <ContactCardLeft>
+            <h1>Contact me</h1>
+            <h2>josephpak2014@gmail.com</h2>
+            <hr />
+            
+          </ContactCardLeft>
+          <ContactCardRight>
+            <img src={climb}/>
+          </ContactCardRight>
+        </ContactContentCard>
+      </ContactContentWrapper>
+    </BodyWrapper>
   </Layout>
 )
 

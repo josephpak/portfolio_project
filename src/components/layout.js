@@ -7,7 +7,7 @@ import "./reset.css"
 
 import {
   SiteWrapper
-} from "./Layout/LayoutStyles"
+} from "../page-styles/LayoutStyles"
 
 const Layout = ({ children }) => (
   <StaticQuery
