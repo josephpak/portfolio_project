@@ -1,13 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
+import styled from "styled-components";
 
 import Header from "./Header/Header"
 import "./reset.css"
 
-import {
-  BodyWrapper,
-} from "./Layout/LayoutStyles"
+const SiteWrapper = styled.div`
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+`
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -21,12 +25,11 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <SiteWrapper>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <BodyWrapper>
-          {children}
-        </BodyWrapper>
-      </>
+        
+        {children}
+      </SiteWrapper>
     )}
   />
 )

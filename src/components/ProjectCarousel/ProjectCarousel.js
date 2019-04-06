@@ -4,21 +4,22 @@ import back from "../../images/back-arrow.png"
 import forward from "../../images/forward-arrow.png"
 
 import {
+    BodyWrapper,
     CardWrapper,
-    DemoWrapper,
-    CaptionWrapper,
-    TechnologiesWrapper,
-    ContentWrapper,
     ProjectWrapper,
+    ContentWrapper,
+    Demo,
+    Caption,
+    Technologies,
     Front,
-    Back
+    Back,
 } from "./ProjectStyles";
 
 import {
   carouselData
 } from "./projectdata"
 
-class ProjectCard extends React.Component {
+class ProjectCarousel extends React.Component {
   constructor(props){
     super(props)
     this.state = {
@@ -70,34 +71,36 @@ class ProjectCard extends React.Component {
     } = currentProject
 
     return (
-      <ProjectWrapper>
-        <Back 
-        src={back}
-        onClick={this.leftClick}
-        />
+      <BodyWrapper>
         <CardWrapper>
-          <DemoWrapper>
-            <img src={image} alt="demo"/>
-          </DemoWrapper>
-          <ContentWrapper>
-            <CaptionWrapper>
-              <h1>{title}</h1>
-              <p>{description}</p>
-            </CaptionWrapper>
-            <TechnologiesWrapper>
+          <Back 
+          src={back}
+          onClick={this.leftClick}
+          />
+          <ProjectWrapper>
+            <Demo>
+              <img src={image} alt="demo"/>
+            </Demo>
+            <ContentWrapper>
+              <Caption>
+                <h1>{title}</h1>
+                <p>{description}</p>
+              </Caption>
+              <Technologies>
                 {technologies.map((el, i) => (
-                  <img src={el} key={i} alt="Technologies Used"/>
+                <img src={el} key={i} alt="Technologies Used"/>
                 ))}
-            </TechnologiesWrapper>
-          </ContentWrapper>  
+              </Technologies>
+            </ContentWrapper>  
+          </ProjectWrapper>
+          <Front 
+          src={forward}
+          onClick={this.rightClick}
+          />
         </CardWrapper>
-        <Front 
-        src={forward}
-        onClick={this.rightClick}
-        />
-        </ProjectWrapper>
+      </BodyWrapper>
     )
   }
 }
 
-export default ProjectCard
+export default ProjectCarousel
