@@ -5,16 +5,19 @@ import {
     NavBarWrapper
 } from "./NavBarStyles"
 
+
 export default function NavBar() {
   return (
     <NavBarWrapper>
         <Link
             to="/"
+            activeStyle={{ color: "black" }}
         >
             About me
         </Link>
         <Link
             to="/projects"
+            activeStyle={{ color: "black" }}
         >
             Projects
         </Link>

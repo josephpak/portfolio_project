@@ -9,10 +9,11 @@ export const NavBarWrapper = styled.div`
     justify-content: space-around;
 
     a {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         color: black;
         text-decoration: none;
         color: gray;
+        font-family: Rubik;
 
         &:hover {
             color: black;

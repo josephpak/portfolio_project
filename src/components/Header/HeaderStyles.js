@@ -26,7 +26,7 @@ export const HeaderContent = styled.div`
   p {
     padding: 0 25px;
     line-height: 2;
-    font-size: 1.3rem;
-    font-family: "Poppins"
+    font-size: 1.8rem;
+    font-family: Feijoa
   }
 ` 
