@@ -2,16 +2,22 @@ import PropTypes from "prop-types";
 import React from "react";
 
 import profile from "../../images/profile.jpg";
+import moon from "../../images/moon-logo.png"
 
 import NavBar from "../NavBar/NavBar";
 
 import {
   HeaderContainer,
-  HeaderContent
+  HeaderContent,
+  NightModeContainer
 } from "./HeaderStyles"
+
 
 const Header = ({ siteTitle }) => (
   <HeaderContainer>
+    <NightModeContainer>
+    <img src={moon}/>
+    </NightModeContainer>
     <HeaderContent>
       <NavBar/>
       <img src={profile} alt="profile-pic"/>

@@ -5,12 +5,14 @@ export const HeaderContainer = styled.div`
   height: 400px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 95px;
 `
 
 export const HeaderContent = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Poppins');
   /* border: 1px solid black; */
-  margin: 0 auto;
   margin: 0 95px;
   width: 100%;
   height: 150px;
@@ -30,3 +32,18 @@ export const HeaderContent = styled.div`
     font-family: Feijoa
   }
 ` 
+
+export const NightModeContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+
+  img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+`

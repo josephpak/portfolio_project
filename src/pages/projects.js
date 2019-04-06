@@ -12,8 +12,7 @@ const BodyContent = styled.div`
   margin: 25px 0;
   margin-top: 75px;
   margin-bottom: 112px;
-  width: 1000px;
-  padding: 2rem 4rem;
+  width: 1200px;
   background: white;
   border-radius: 5px;
   box-shadow:  0 2px 4px rgba(0, 0, 0, 0.12);

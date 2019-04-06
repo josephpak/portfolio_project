@@ -4,7 +4,7 @@ export const CardWrapper = styled.div`
     font-size: 1rem;
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 400px;
     align-items: center;
     width: 100%;
 `
@@ -18,16 +18,16 @@ export const TechnologiesWrapper = styled.div`
 
 export const DemoWrapper = styled.div`
     img {
-        max-height: 250px;
+        max-height: 400px;
         position: relative;
-        top: -75px;
-        align-self: flex-end;
     }    
 `
 
 export const CaptionWrapper = styled.div`
     align-items: center;
     padding: 0 30px;
+    width: 80%;
+    max-width: 80%;
 
     h1 {
         font-size: 1.2rem;
@@ -43,21 +43,27 @@ export const CaptionWrapper = styled.div`
 
 export const ContentWrapper = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 550px;
     align-items: center;
+    background-color: #f4f8ff;
+    height: 95%;
+    min-height: 95%;
+    margin-left: 25px;
+    flex-direction: column;
 `
 
 export const Front = styled.img`
   height: 75px;
-  right: 5%;
-  position: absolute;
+  /* right: 5%;
+  position: absolute; */
+  cursor: pointer;
 `
 
 export const Back = styled.img`
   height: 75px;
-  left: 5%;
-  position: absolute;
+  /* left: 5%;
+  position: absolute; */
   cursor: pointer;
 `
 
@@ -65,4 +71,5 @@ export const ProjectWrapper = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
+  width: 100%;
 `
