@@ -53,6 +53,17 @@ table {
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-html {
-	font-family: 'Poppins'
+@font-face {
+	font-family: 'Feijoa';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Feijoa Display'), url('../fonts/Feijoa.otf');
 }
+
+@font-face {
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Rublik-Regular'), url('../fonts/Rubik.ttf');
+}
+

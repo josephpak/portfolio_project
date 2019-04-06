@@ -73,3 +73,7 @@ export const ProjectWrapper = styled.div`
   cursor: pointer;
   width: 100%;
 `
+
+// const white = "#FFFFFF"
+// const black = "#161617"
+// const gray = "#F8f8f9"
