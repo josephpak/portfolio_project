@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
-export const FooterWrapper = styled.footer`
-  border: 2px solid red;
+export const SiteWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 `

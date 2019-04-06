@@ -6,7 +6,6 @@ export const BodyWrapper = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: 3px solid green;
 `
 
 export const Front = styled.img`
@@ -36,7 +35,6 @@ export const ProjectWrapper = styled.div`
     height: 400px;
     align-items: center;
     width: 100%;
-    border: 1px solid black;
 `
 
 export const Technologies = styled.div`
