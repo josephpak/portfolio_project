@@ -69,3 +69,4 @@ table {
 	src: local('Rublik-Regular'), url('../fonts/Rubik.ttf');
 }
 
+@import '~antd/dist/antd.css';
