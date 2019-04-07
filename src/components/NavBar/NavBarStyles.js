@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+import {
+    mobile
+} from "../Misc/media-points"
+
 export const NavBarWrapper = styled.div`
     /* border: 1px solid black; */
     display: flex;
@@ -7,6 +11,11 @@ export const NavBarWrapper = styled.div`
     height: 100px;
     min-width: 100px;
     justify-content: space-around;
+
+    @media ${mobile} {
+        flex-direction: row;
+        padding-top: 20px;
+    }
 
     a {
         font-size: 1.3rem;
@@ -17,6 +26,10 @@ export const NavBarWrapper = styled.div`
 
         &:hover {
             color: black;
+        }
+
+        @media ${mobile} {
+            padding: 0 10px;
         }
     }
 `

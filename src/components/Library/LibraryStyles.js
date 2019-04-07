@@ -1,5 +1,9 @@
 import styled from "styled-components"
 
+import {
+    mobile
+} from "../Misc/media-points"
+
 export const Book = styled.div`
     border: 2px solid blue;
     width: 100%;
@@ -56,8 +60,19 @@ export const LibraryWrapper = styled.div`
     flex-wrap: wrap;
     width: 80%;
 
+    @media ${mobile} {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+
     h1 {
         font-family: Feijoa;
         font-size: 1.5rem;
+
+        @media ${mobile} {
+            text-align: center;
+        }
     }
 `

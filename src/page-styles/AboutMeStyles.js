@@ -1,5 +1,9 @@
 import styled from "styled-components"
 
+import {
+    mobile
+} from "../components/Misc/media-points"
+
 export const BodyWrapper = styled.div`
     width: 100%;
     display: flex;
@@ -9,10 +13,20 @@ export const BodyWrapper = styled.div`
 export const MainContentWrapper = styled.div`
     width: 100%;
     display: flex;
+
+    @media ${mobile} {
+        flex-direction: column;
+        align-items: center
+    }
 `
 
 export const Interests = styled.div`
     width: 50%;
+
+    @media ${mobile} {
+        width: 100%;
+        
+    }
 `
 
 export const ContactContentWrapper = styled.div`
@@ -24,6 +38,10 @@ export const ContactContentWrapper = styled.div`
 export const ContactContentCard = styled.div`
     width: 90%;
     display: flex;
+
+    @media ${mobile} {
+        flex-direction: column;
+    }
 `
 
 export const ContactCardLeft = styled.div`
@@ -33,6 +51,10 @@ export const ContactCardLeft = styled.div`
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+
+    @media ${mobile} {
+        width: 100%;
+    }
 
     h1 {
         font-family: Feijoa;
@@ -59,6 +81,10 @@ export const ContactCardLeft = styled.div`
 
 export const ContactCardRight = styled.div`
     width: 50%;
+
+    @media ${mobile} {
+        width: 100%;
+    }
 
     img {
         width: 100%;

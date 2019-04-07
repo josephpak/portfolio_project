@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+import {
+  mobile
+} from "../Misc/media-points"
+
 export const HeaderContainer = styled.div`
   /* border: 2px dotted black; */
   height: 400px;
@@ -8,6 +12,12 @@ export const HeaderContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   margin: 0 95px;
+
+  @media ${mobile} {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
 `
 
 export const HeaderContent = styled.div`
@@ -19,10 +29,18 @@ export const HeaderContent = styled.div`
   display: flex;
   align-items: center;
 
+  @media ${mobile} {
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+  }
+
   img {
     height: 100px;
     min-width: 100px;
     margin: 0 50px;
+
+
   }
 
   p {
@@ -31,6 +49,12 @@ export const HeaderContent = styled.div`
     font-size: 1.8rem;
     font-family: Feijoa;
     color: black;
+
+    @media ${mobile} {
+      font-size: 1.4rem;
+      padding: 20px 30px;
+      text-align: center;
+    }
   }
 ` 
 
