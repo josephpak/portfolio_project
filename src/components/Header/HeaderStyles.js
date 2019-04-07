@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 import {
-  mobile
+  mobile,
+  tablet
 } from "../Misc/media-points"
 
 export const HeaderContainer = styled.div`
@@ -54,6 +55,10 @@ export const HeaderContent = styled.div`
       font-size: 1.4rem;
       padding: 20px 30px;
       text-align: center;
+    }
+
+    @media ${tablet} {
+      font-size: 1.4rem;
     }
   }
 ` 

@@ -1,7 +1,8 @@
 import styled from "styled-components"
 
 import {
-    mobile
+    mobile,
+    tablet
 } from "../Misc/media-points"
 
 export const Book = styled.div`
@@ -65,6 +66,10 @@ export const LibraryWrapper = styled.div`
         display: flex;
         justify-content: center;
         display: none;
+    }
+
+    @media ${tablet} {
+        width: 100%;
     }
 
     h1 {

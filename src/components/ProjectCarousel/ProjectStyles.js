@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 import {
-    mobile
+    mobile,
+    tablet
 } from "../Misc/media-points"
 
 export const BodyWrapper = styled.div`
@@ -10,9 +11,15 @@ export const BodyWrapper = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 0 3%;
 
     @media ${mobile} {
         min-height: 800px;
+    }
+
+    @media ${tablet} {
+        width: 100%;
+        padding: 0 3%;
     }
 `
 
@@ -39,6 +46,11 @@ export const CardWrapper = styled.div`
         width: 100%;
         height: 70%;
         margin: 0;
+    }
+
+    @media ${tablet} {
+        width: 100%;
+        
     }
 `
 
@@ -117,6 +129,10 @@ export const ContentWrapper = styled.div`
         padding: 20px 0;
         height: 200px;
         min-height: 200px;
+    }
+
+    @media ${tablet} {
+        width: 100%;
     }
 `
 
