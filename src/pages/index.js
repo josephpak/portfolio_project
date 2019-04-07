@@ -35,7 +35,7 @@ const AboutMe = () => (
             <hr />
           </ContactCardLeft>
           <ContactCardRight>
-            <img src={rocks}/>
+            <img src={rocks} alt="Rock Climbing"/>
           </ContactCardRight>
         </ContactContentCard>
       </ContactContentWrapper>

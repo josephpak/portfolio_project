@@ -9,26 +9,51 @@ import {
   SiteWrapper
 } from "../page-styles/LayoutStyles"
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
+import {
+  ThemeContext,
+  useEffectDarkMode
+} from "../hooks/darkMode"
+
+const Layout = ({ children }) => {
+  const [themeState, setThemeState] = useEffectDarkMode() 
+
+  const toggle = () => {
+    const dark = !themeState.dark;
+    localStorage.setItem("dark", JSON.stringify(dark))
+    setThemeState({
+        ...themeState,
+        dark
+    })
+  }
+
+  return (
+    <StaticQuery
+      query={graphql`
+        query SiteTitleQuery {
+          site {
+            siteMetadata {
+              title
+            }
           }
         }
-      }
-    `}
-    render={data => (
-      <SiteWrapper>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        
-        {children}
-      </SiteWrapper>
-    )}
-  />
-)
+      `}
+      render={data => (
+        <ThemeContext.Provider
+          value={{
+            dark: themeState.dark,
+            toggle: toggle
+          }}
+        >
+          <SiteWrapper>
+              <Header toggle={toggle}/>
+              {children}
+          </SiteWrapper>
+        </ThemeContext.Provider>
+      )}
+    />
+  )
+  
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

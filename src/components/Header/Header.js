@@ -12,21 +12,33 @@ import {
   NightModeContainer
 } from "./HeaderStyles"
 
+import {
+  useTheme
+} from "../../hooks/darkMode"
 
-const Header = ({ siteTitle }) => (
-  <HeaderContainer>
-    <NightModeContainer>
-    <img src={moon}/>
-    </NightModeContainer>
-    <HeaderContent>
-      <NavBar/>
-      <img src={profile} alt="profile-pic"/>
-      <p>
-        Hi! I’m Joe. I was most recently a product manager at FiscalNote where I led research and development for the company’s relationship management software and data products.
-      </p>
-    </HeaderContent>
-  </HeaderContainer>
-)
+const Header = ({ siteTitle }) => {
+  const themeState = useTheme()
+  
+
+  return (
+    
+    <HeaderContainer>
+      {console.log(themeState)}
+      <NightModeContainer>
+      <img src={moon} alt="Dark Mode button" onClick={e =>  themeState.toggle()}/>
+      {`${themeState.dark}`}
+      </NightModeContainer>
+      <HeaderContent>
+        <NavBar/>
+        <img src={profile} alt="profile-pic"/>
+        <p>
+          Hi! I’m Joe. I was most recently a product manager at FiscalNote where I led research and development for the company’s relationship management software and data products.
+        </p>
+      </HeaderContent>
+    </HeaderContainer>
+  )
+  
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
