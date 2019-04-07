@@ -36,7 +36,7 @@ export const BooksWrapper = styled.div`
     margin-right: 5px;
 
     hr {
-        width: 10%;
+        width: 20%;
         text-align: left;
         margin-left: 0;
         border-color: blue;
@@ -48,7 +48,7 @@ export const NewsStand = styled.div`
     width: 45%;
 
     hr {
-        width: 10%;
+        width: 20%;
         text-align: left;
         margin-left: 0;
         border-color: brown;
@@ -75,6 +75,7 @@ export const LibraryWrapper = styled.div`
     h1 {
         font-family: Feijoa;
         font-size: 1.5rem;
+        padding-bottom: 20px;
 
         @media ${mobile} {
             text-align: center;
