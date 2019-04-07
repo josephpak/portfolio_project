@@ -48,7 +48,7 @@ export const ContactCardLeft = styled.div`
         font-size: 1.4rem;
         color: white;
         width: 100%;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
     }
 
     hr {
