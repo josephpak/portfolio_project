@@ -1,9 +1,7 @@
 import React from "react"
 // import { Link } from "gatsby"
 import WorkTimeline from "../components/Timeline/WorkTimeline"
-
 import Layout from "../components/layout"
-
 import climb from "../images/climb.jpg"
 
 import SEO from "../components/seo"
