@@ -14,7 +14,7 @@ export default function WorkTimeline() {
       >
           <Timeline.Item
           color="crimson"
-          >Harvard College <br /> A.B. 2014</Timeline.Item>
+          ><span>Harvard College</span> <br /> A.B. 2014</Timeline.Item>
           <Timeline.Item>Market Metrics, FactSet <br /> Data Product Analyst</Timeline.Item>
           <Timeline.Item
           color="purple"

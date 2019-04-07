@@ -6,4 +6,10 @@ export const TimelineWrapper = styled.div`
     justify-content: center;
     align-items: center;
     height: 400px;
+    
+    font-family: Rubik;
+
+    li {
+        font-size: 1rem;
+    }
 `

@@ -66,7 +66,16 @@ table {
 	font-family: 'Rubik';
 	font-style: normal;
 	font-weight: 400;
-	src: local('Rublik-Regular'), url('../fonts/Rubik.ttf');
+	src: local('Rubik-Regular'), url('../fonts/Rubik.ttf');
 }
+
+@font-face {
+	font-family: 'Rubik-Bold';
+	font-style: normal;
+	font-weight: 200;
+	src: local('Rubik-Bold'), url('../fonts/Rubik-Bold.ttf');
+}
+
+
 
 @import '~antd/dist/antd.css';
