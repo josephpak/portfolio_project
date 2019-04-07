@@ -1,6 +1,7 @@
 import React from "react"
 // import { Link } from "gatsby"
 import WorkTimeline from "../components/Timeline/WorkTimeline"
+import Library from "../components/Library/Library"
 import Layout from "../components/layout"
 import rocks from "../images/rocks.jpg"
 
@@ -23,7 +24,7 @@ const AboutMe = () => (
       <MainContentWrapper>
         <WorkTimeline />
         <Interests>
-          My Interests
+          <Library/>
         </Interests>
       </MainContentWrapper>
       <ContactContentWrapper>

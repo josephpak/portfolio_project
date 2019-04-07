@@ -12,7 +12,6 @@ export const MainContentWrapper = styled.div`
 `
 
 export const Interests = styled.div`
-    border: 1px dotted green;
     width: 50%;
 `
 

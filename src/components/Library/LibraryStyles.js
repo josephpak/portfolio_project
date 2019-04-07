@@ -1,0 +1,62 @@
+import styled from "styled-components"
+
+export const Book = styled.div`
+    border: 2px solid blue;
+    width: 300px;
+    height: 70px;
+    border-radius: 10px;
+    font-family: Rubik;
+    color: blue;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin: 10px 0;
+`
+
+export const Article = styled.div`
+    border: 2px solid brown;
+    width: 300px;
+    height: 70px;
+    border-radius: 10px;
+    font-family: Rubik;
+    color: brown;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin: 10px 0;
+`
+
+export const BooksWrapper = styled.div`
+    width: 50%;
+
+    hr {
+        width: 10%;
+        text-align: left;
+        margin-left: 0;
+        border-color: blue;
+        border-width: 2px;
+    }
+`
+
+export const NewsStand = styled.div`
+    width: 50%;
+
+    hr {
+        width: 10%;
+        text-align: left;
+        margin-left: 0;
+        border-color: brown;
+        border-width: 2px;
+    }
+`
+
+export const LibraryWrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+
+    h1 {
+        font-family: Feijoa;
+        font-size: 1.5rem;
+    }
+`
