@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Book = styled.div`
     border: 2px solid blue;
-    width: 300px;
+    width: 100%;
     height: 70px;
     border-radius: 10px;
     font-family: Rubik;
@@ -15,7 +15,7 @@ export const Book = styled.div`
 
 export const Article = styled.div`
     border: 2px solid brown;
-    width: 300px;
+    width: 100%;
     height: 70px;
     border-radius: 10px;
     font-family: Rubik;
@@ -27,7 +27,8 @@ export const Article = styled.div`
 `
 
 export const BooksWrapper = styled.div`
-    width: 50%;
+    width: 45%;
+    margin-right: 5px;
 
     hr {
         width: 10%;
@@ -39,7 +40,7 @@ export const BooksWrapper = styled.div`
 `
 
 export const NewsStand = styled.div`
-    width: 50%;
+    width: 45%;
 
     hr {
         width: 10%;
