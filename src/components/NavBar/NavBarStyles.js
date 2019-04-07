@@ -14,7 +14,7 @@ export const NavBarWrapper = styled.div`
 
     @media ${mobile} {
         flex-direction: row;
-        padding-top: 22px;
+        padding-top: 24px;
     }
 
     a {
