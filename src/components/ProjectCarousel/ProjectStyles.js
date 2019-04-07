@@ -1,11 +1,19 @@
 import styled from "styled-components";
 
+import {
+    mobile
+} from "../Misc/media-points"
+
 export const BodyWrapper = styled.div`
     background-color: #E9C3B8;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+
+    @media ${mobile} {
+        min-height: 800px;
+    }
 `
 
 export const Front = styled.img`
@@ -26,6 +34,12 @@ export const CardWrapper = styled.div`
     width: 1200px;
     border-radius: 5px;
     box-shadow:  0 2px 4px rgba(0, 0, 0, 0.12);
+
+    @media ${mobile} {
+        width: 100%;
+        height: 70%;
+        margin: 0;
+    }
 `
 
 export const ProjectWrapper = styled.div`
@@ -35,6 +49,11 @@ export const ProjectWrapper = styled.div`
     height: 400px;
     align-items: center;
     width: 100%;
+
+    @media ${mobile} {
+        flex-direction: column;
+        justify-content: center;
+    }
 `
 
 export const Technologies = styled.div`
@@ -48,6 +67,11 @@ export const Demo = styled.div`
     img {
         max-height: 400px;
         position: relative;
+
+        @media ${mobile} {
+            width: 100%;
+            max-height: 500px;
+        }
     }    
 `
 
@@ -56,6 +80,10 @@ export const Caption = styled.div`
     padding: 0 30px;
     width: 80%;
     max-width: 80%;
+
+    @media ${mobile} {
+        width: 100%;
+    }
 
     h1 {
         font-size: 1.2rem;
@@ -81,6 +109,15 @@ export const ContentWrapper = styled.div`
     min-height: 95%;
     margin-left: 25px;
     flex-direction: column;
+
+    @media ${mobile} {
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+        padding: 20px 0;
+        height: 200px;
+        min-height: 200px;
+    }
 `
 
 
