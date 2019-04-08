@@ -5,9 +5,15 @@ import {
   TimelineWrapper
 } from "./TimelineStyles"
 
+import {
+  useTheme
+} from "../../hooks/darkMode"
+
 export default function WorkTimeline() {
+  const themeState = useTheme()
+
   return (
-    <TimelineWrapper>
+    <TimelineWrapper dark={themeState.dark}>
       <Timeline
           pending="My next adventure"
           reverse="true"

@@ -5,19 +5,24 @@ import {
     NavBarWrapper
 } from "./NavBarStyles"
 
+import {
+    useTheme
+} from "../../hooks/darkMode"
 
 export default function NavBar() {
+  const themeState = useTheme()  
+
   return (
     <NavBarWrapper>
         <Link
             to="/"
-            activeStyle={{ color: "black" }}
+            activeStyle={{color: themeState.dark ? "white" : "black"}}
         >
             About me
         </Link>
         <Link
             to="/projects"
-            activeStyle={{ color: "black" }}
+            activeStyle={{color: themeState.dark ? "white" : "black"}}
         >
             Projects
         </Link>

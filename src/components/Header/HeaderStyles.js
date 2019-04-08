@@ -5,6 +5,12 @@ import {
   tablet
 } from "../Misc/media-points"
 
+import {
+  black,
+  gray,
+  white
+} from "../Misc/darkmode-colors"
+
 export const HeaderContainer = styled.div`
   /* border: 2px dotted black; */
   height: 400px;
@@ -29,6 +35,7 @@ export const HeaderContent = styled.div`
   height: 150px;
   display: flex;
   align-items: center;
+  color: ${props => props.dark ? white : black};
 
   @media ${mobile} {
     flex-direction: column;
@@ -49,7 +56,6 @@ export const HeaderContent = styled.div`
     line-height: 2;
     font-size: 1.8rem;
     font-family: Feijoa;
-    color: black;
 
     @media ${mobile} {
       font-size: 1.4rem;

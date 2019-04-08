@@ -4,6 +4,12 @@ import {
     mobile
 } from "../components/Misc/media-points"
 
+import {
+    white,
+    gray,
+    black
+} from "../components/Misc/darkmode-colors"
+
 export const BodyWrapper = styled.div`
     width: 100%;
     display: flex;
@@ -44,13 +50,13 @@ export const ContactContentCard = styled.div`
     }
 `
 
-export const ContactCardLeft = styled.div`
+export const ContactCardLeftWrapper = styled.div`
     width: 50%;
-    background-color: #1F4955;
     padding: 40px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    background-color: ${props => props.dark ? gray : "#1F4955"};
 
     @media ${mobile} {
         width: 100%;
@@ -59,7 +65,7 @@ export const ContactCardLeft = styled.div`
     h1 {
         font-family: Feijoa;
         font-size: 2.4rem;
-        color: white;
+        color: ${props => props.dark ? black : white};
         width: 100%;
         padding-bottom: 25px;
     }
@@ -67,7 +73,7 @@ export const ContactCardLeft = styled.div`
     h2 {
         font-family: Feijoa;
         font-size: 1.4rem;
-        color: white;
+        color: ${props => props.dark ? black : white};
         width: 100%;
         padding-bottom: 10px;
     }

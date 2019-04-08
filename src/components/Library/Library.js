@@ -8,6 +8,10 @@ import {
     LibraryWrapper
 } from "./LibraryStyles"
 
+import {
+    useTheme
+} from "../../hooks/darkMode";
+
 const libraryData = [
     {
         "title": "The Power Broker",
@@ -42,9 +46,13 @@ const standData = [
     }
 ]
 
+
+
 export default function Library() {
+  const themeState = useTheme()
+
   return (
-    <LibraryWrapper>
+    <LibraryWrapper dark={themeState.dark}>
         <h1 style={{
             width: '100%'
         }}>

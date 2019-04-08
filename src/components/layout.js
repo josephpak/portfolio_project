@@ -44,9 +44,16 @@ const Layout = ({ children }) => {
             toggle: toggle
           }}
         >
-          <SiteWrapper>
-              <Header toggle={toggle}/>
+          <SiteWrapper dark={themeState.dark}>
+              <Header />
+              <ThemeContext.Provider
+                value={{
+                  dark: themeState.dark,
+                  toggle: toggle
+                }}
+              >
               {children}
+              </ThemeContext.Provider>
           </SiteWrapper>
         </ThemeContext.Provider>
       )}

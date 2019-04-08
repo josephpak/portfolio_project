@@ -12,35 +12,35 @@ import {
   MainContentWrapper,
   ContactContentWrapper,
   ContactContentCard,
-  ContactCardLeft,
   ContactCardRight,
   Interests
 } from "../page-styles/AboutMeStyles"
 
-const AboutMe = () => (
-  <Layout>
-    <SEO title="Hi, I'm Joe Pak" />
-    <BodyWrapper>
-      <MainContentWrapper>
-        <WorkTimeline />
-        <Interests>
-          <Library/>
-        </Interests>
-      </MainContentWrapper>
-      <ContactContentWrapper>
-        <ContactContentCard>
-          <ContactCardLeft>
-            <h1>Contact me</h1>
-            <h2>josephpak2014@gmail.com</h2>
-            <hr />
-          </ContactCardLeft>
-          <ContactCardRight>
-            <img src={rocks} alt="Rock Climbing"/>
-          </ContactCardRight>
-        </ContactContentCard>
-      </ContactContentWrapper>
-    </BodyWrapper>
-  </Layout>
-)
+import ContactCardLeft from "../components/ContactCards/ContactCardLeft"
+
+const AboutMe = () => {
+
+  return (
+      <Layout>
+      <SEO title="Hi, I'm Joe Pak" />
+      <BodyWrapper>
+        <MainContentWrapper>
+          <WorkTimeline />
+          <Interests>
+            <Library/>
+          </Interests>
+        </MainContentWrapper>
+        <ContactContentWrapper>
+          <ContactContentCard>
+            <ContactCardLeft />
+            <ContactCardRight>
+              <img src={rocks} alt="Rock Climbing"/>
+            </ContactCardRight>
+          </ContactContentCard>
+        </ContactContentWrapper>
+      </BodyWrapper>
+    </Layout>
+  )
+}
 
 export default AboutMe

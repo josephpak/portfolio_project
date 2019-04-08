@@ -5,6 +5,12 @@ import {
     tablet
 } from "../Misc/media-points"
 
+import {
+    black,
+    white,
+    gray
+} from "../Misc/darkmode-colors"
+
 export const Book = styled.div`
     border: 2px solid blue;
     width: 100%;
@@ -76,6 +82,8 @@ export const LibraryWrapper = styled.div`
         font-family: Feijoa;
         font-size: 1.5rem;
         padding-bottom: 20px;
+
+        color: ${props => props.dark ? white : black};
 
         @media ${mobile} {
             text-align: center;
