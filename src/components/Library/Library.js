@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import {
     Book,
@@ -67,7 +68,7 @@ export default function Library() {
             <hr />
             {libraryData.filter(book => (book.status === "reading")).map(book => (
                 <Book dark={themeState.dark}>
-                    <a href={book.link} target="_blank" rel="noopener noreferrer">{book.title}</a>
+                    <OutboundLink href={book.link} target="_blank" rel="noopener noreferrer">{book.title}</OutboundLink>
                 </Book>
             ))}
         </BooksWrapper>
@@ -75,7 +76,7 @@ export default function Library() {
             <hr />
             {standData.map(article => (
                 <Article dark={themeState.dark}>
-                    <a href={article.link} target="_blank" rel="noopener noreferrer">{article.title}</a>
+                    <OutboundLink href={article.link} target="_blank" rel="noopener noreferrer">{article.title}</OutboundLink>
                 </Article>
             ))}
         </NewsStand>

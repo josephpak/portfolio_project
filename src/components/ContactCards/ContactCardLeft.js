@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import twitter from '../../images/social-twitter-outline.png'
 import linkedin from '../../images/social-linkedin-outline.png'
@@ -25,9 +26,9 @@ export default function ContactCardLeft() {
             <a href="mailto:josephpak2014@gmail.com">josephpak2014@gmail.com</a>
             <hr />
             <SocialWrapper>
-                <a href="http://twitter.com/josephpak" target="_blank" rel="noopener noreferrer"><img src={themeState.dark ? twitter : twitterWhite} alt="twitter"/></a>
-                <a href="http://linkedin.com/in/josephjpak" target="_blank" rel="noopener noreferrer"><img src={themeState.dark ? linkedin :linkedinWhite}alt="linkedin"/></a>
-                <a href="http://github.com/josephpak" target="_blank" rel="noopener noreferrer"><img src={themeState.dark ? github : githubWhite} alt="github"/></a>
+                <OutboundLink href="http://twitter.com/josephpak" target="_blank" rel="noopener noreferrer"><img src={themeState.dark ? twitter : twitterWhite} alt="twitter"/></OutboundLink>
+                <OutboundLink href="http://linkedin.com/in/josephjpak" target="_blank" rel="noopener noreferrer"><img src={themeState.dark ? linkedin :linkedinWhite}alt="linkedin"/></OutboundLink>
+                <OutboundLink href="http://github.com/josephpak" target="_blank" rel="noopener noreferrer"><img src={themeState.dark ? github : githubWhite} alt="github"/></OutboundLink>
             </SocialWrapper>
         </ContactCardLeftWrapper>
     )
