@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import back from "../../images/back-arrow.png"
 import forward from "../../images/forward-arrow.png"
@@ -19,49 +19,34 @@ import {
   carouselData
 } from "./projectdata"
 
-class ProjectCarousel extends React.Component {
-  constructor(props){
-    super(props)
-    this.state = {
-      projects: carouselData,
-      currentIndex: 0,
-    }
-  }
-  
-  componentDidMount(){
-    this.setState({
-      projects: carouselData
-    })
-  }
+import {
+  useTheme
+} from "../../hooks/darkMode"
 
-  leftClick = () => {
-    let lastIndex = this.state.projects.length - 1;
-    if (this.state.currentIndex === 0){
-      this.setState({
-        currentIndex: lastIndex
-      })
+const ProjectCarousel = () => {
+  const themeState = useTheme()
+  const [projects, setProjects] = useState(carouselData)
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const leftClick = () => {
+    let lastIndex = projects.length - 1;
+    if (currentIndex === 0){
+      setCurrentIndex(lastIndex)
     } else {
-      this.setState(prevState => ({
-        currentIndex: prevState.currentIndex - 1
-      }))
+      setCurrentIndex(currentIndex - 1)
     }
   }
 
-  rightClick = () => {
-    let lastIndex = this.state.projects.length - 1;
-    if (this.state.currentIndex === lastIndex){
-      this.setState({
-        currentIndex: 0
-      })
+  const rightClick = () => {
+    let lastIndex = projects.length - 1;
+    if (currentIndex === lastIndex){
+      setCurrentIndex(0)
     } else {
-      this.setState(prevState => ({
-        currentIndex: prevState.currentIndex + 1
-      }))
+      setCurrentIndex(currentIndex + 1)
     }
   }
   
-  render() {
-    const currentProject = this.state.projects[this.state.currentIndex]
+    const currentProject = projects[currentIndex]
 
     const {
       image,
@@ -71,17 +56,17 @@ class ProjectCarousel extends React.Component {
     } = currentProject
 
     return (
-      <BodyWrapper>
-        <CardWrapper>
+      <BodyWrapper dark={themeState.dark}>
+        <CardWrapper dark={themeState.dark}>
           <Back 
           src={back}
-          onClick={this.leftClick}
+          onClick={leftClick}
           />
           <ProjectWrapper>
             <Demo>
               <img src={image} alt="demo"/>
             </Demo>
-            <ContentWrapper>
+            <ContentWrapper dark={themeState.dark}>
               <Caption>
                 <h1>{title}</h1>
                 <p>{description}</p>
@@ -95,12 +80,12 @@ class ProjectCarousel extends React.Component {
           </ProjectWrapper>
           <Front 
           src={forward}
-          onClick={this.rightClick}
+          onClick={rightClick}
           />
         </CardWrapper>
       </BodyWrapper>
     )
-  }
+
 }
 
 export default ProjectCarousel

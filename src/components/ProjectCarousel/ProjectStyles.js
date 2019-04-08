@@ -5,8 +5,14 @@ import {
     tablet
 } from "../Misc/media-points"
 
+import {
+    white,
+    gray,
+    black
+} from "../Misc/darkmode-colors"
+
 export const BodyWrapper = styled.div`
-    background-color: #E9C3B8;
+    background-color: ${props => props.dark ? white : "#E9C3B8"};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +42,7 @@ export const Back = styled.img`
 export const CardWrapper = styled.div`
     display: flex;
     align-items: center;
-    background: white;
+    background: ${props => props.dark ? gray : white};
     margin: 70px 0;
     width: 1200px;
     border-radius: 5px;
@@ -116,11 +122,13 @@ export const ContentWrapper = styled.div`
     justify-content: space-evenly;
     width: 550px;
     align-items: center;
-    background-color: #f4f8ff;
+    background-color: ${props => props.dark ? white : "#f4f8ff"};
     height: 95%;
     min-height: 95%;
     margin-left: 25px;
     flex-direction: column;
+    border: 1px solid ${props => props.dark ? black : "none"};
+    border-radius: ${props => props.dark ? "5px" : "none"};
 
     @media ${mobile} {
         width: 100%;
