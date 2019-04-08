@@ -16,33 +16,38 @@ const libraryData = [
     {
         "title": "The Power Broker",
         "author": "Robert Caro",
-        "link": "",
+        "link": "https://www.amazon.com/Power-Broker-Robert-Moses-Fall/dp/0394720245",
         "status": "reading"
     },
     {
         "title": "Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days",
-        "author": "Robert Caro",
-        "link": "",
+        "author": "Jake Knapp",
+        "link": "https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/150112174X",
         "status": "reading"
     },
     {
         "title": "Bad Blood",
         "author": "John Carreyrou",
-        "link": "",
+        "link": "https://www.amazon.com/Bad-Blood-Secrets-Silicon-Startup/dp/152473165X",
         "status": "read"
     }
 ]
 
 const standData = [
     {
-        "title": "This is an example of an article",
-        "publication": "Washington Post",
-        "link": ""
+        "title": "Introducing Hooks",
+        "publication": "Facebook Open Source",
+        "link": "https://reactjs.org/docs/hooks-intro.html"
     },
     {
-        "title": "This is an example of an article",
-        "publication": "Washington Post",
-        "link": ""
+        "title": "Status as a Service (StaaS)",
+        "publication": "Remains of the Day",
+        "link": "https://www.eugenewei.com/blog/2019/2/19/status-as-a-service"
+    },
+    {
+        "title": "Eloquent Javascript",
+        "publication": "Marijn Haverbeke",
+        "link": "https://eloquentjavascript.net/"
     }
 ]
 
@@ -58,19 +63,19 @@ export default function Library() {
         }}>
             What I'm Reading
         </h1>
-        <BooksWrapper>
+        <BooksWrapper dark={themeState.dark}>
             <hr />
             {libraryData.filter(book => (book.status === "reading")).map(book => (
-                <Book>
-                    {book.title}
+                <Book dark={themeState.dark}>
+                    <a href={book.link} target="_blank">{book.title}</a>
                 </Book>
             ))}
         </BooksWrapper>
-        <NewsStand>
+        <NewsStand dark={themeState.dark}>
             <hr />
             {standData.map(article => (
-                <Article>
-                    {article.title}
+                <Article dark={themeState.dark}>
+                    <a>{article.title}</a>
                 </Article>
             ))}
         </NewsStand>
