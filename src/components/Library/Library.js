@@ -67,7 +67,7 @@ export default function Library() {
             <hr />
             {libraryData.filter(book => (book.status === "reading")).map(book => (
                 <Book dark={themeState.dark}>
-                    <a href={book.link} target="_blank">{book.title}</a>
+                    <a href={book.link} target="_blank" rel="noopener noreferrer">{book.title}</a>
                 </Book>
             ))}
         </BooksWrapper>
@@ -75,7 +75,7 @@ export default function Library() {
             <hr />
             {standData.map(article => (
                 <Article dark={themeState.dark}>
-                    <a>{article.title}</a>
+                    <a href={article.link} target="_blank" rel="noopener noreferrer">{article.title}</a>
                 </Article>
             ))}
         </NewsStand>

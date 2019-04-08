@@ -25,7 +25,7 @@ import {
 
 const ProjectCarousel = () => {
   const themeState = useTheme()
-  const [projects, setProjects] = useState(carouselData)
+  const [projects] = useState(carouselData)
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const leftClick = () => {

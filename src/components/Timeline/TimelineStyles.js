@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 import {
     white,
-    gray,
     black
 } from "../Misc/darkmode-colors"
 

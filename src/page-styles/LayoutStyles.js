@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import {
   black,
   white,
-  gray
 } from "../components/Misc/darkmode-colors"
 
 export const SiteWrapper = styled.div`

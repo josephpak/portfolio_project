@@ -7,7 +7,6 @@ import {
 
 import {
   black,
-  gray,
   white
 } from "../Misc/darkmode-colors"
 
