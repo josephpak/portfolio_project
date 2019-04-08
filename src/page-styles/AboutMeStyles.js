@@ -104,3 +104,4 @@ export const ContactCardRight = styled.div`
         width: 100%;
     }
 `
+
