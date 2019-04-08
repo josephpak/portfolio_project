@@ -22,7 +22,7 @@ const AboutMe = () => {
 
   return (
       <Layout>
-      <SEO title="Hi, I'm Joe Pak" />
+      <SEO title="Joe Pak" />
       <BodyWrapper>
         <MainContentWrapper>
           <WorkTimeline />
