@@ -19,7 +19,6 @@ import {
 import ContactCardLeft from "../components/ContactCards/ContactCardLeft"
 
 const AboutMe = () => {
-
   return (
       <Layout>
       <SEO title="Joe Pak" />
