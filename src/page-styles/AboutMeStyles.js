@@ -70,7 +70,7 @@ export const ContactCardLeftWrapper = styled.div`
         padding-bottom: 25px;
     }
 
-    h2 {
+    a {
         font-family: Feijoa;
         font-size: 1.4rem;
         color: ${props => props.dark ? black : white};
@@ -82,6 +82,14 @@ export const ContactCardLeftWrapper = styled.div`
         width: 10%;
         text-align: left;
         margin-left: 0;
+    }
+`
+
+export const SocialWrapper = styled.div`
+    img {
+        width: 35px;
+        margin: 10px 0;
+        margin-right: 10px;
     }
 `
 
