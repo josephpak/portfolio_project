@@ -2,8 +2,8 @@ import PropTypes from "prop-types";
 import React from "react";
 
 import profile from "../../images/profile.jpg";
-import moon from "../../images/moon-logo.png"
-import sun from "../../images/sun.png"
+import moon from "../../images/icons/moon.png"
+import sun from "../../images/icons/sun.png"
 
 import NavBar from "../NavBar/NavBar";
 

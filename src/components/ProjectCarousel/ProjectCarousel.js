@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
-import back from "../../images/back-arrow.png"
-import forward from "../../images/forward-arrow.png"
+import back from "../../images/icons/back-arrow.png"
+import forward from "../../images/icons/forward-arrow.png"
 
 import {
     BodyWrapper,

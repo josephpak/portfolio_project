@@ -1,12 +1,12 @@
 import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
-import twitter from '../../images/social-twitter-outline.png'
-import linkedin from '../../images/social-linkedin-outline.png'
-import github from '../../images/social-github-outline.png'
-import twitterWhite from '../../images/twitter-white.png'
-import linkedinWhite from '../../images/linkedin-white.png'
-import githubWhite from '../../images/github-white.png'
+import twitter from '../../images/logos/social-twitter-outline.png'
+import linkedin from '../../images/logos/social-linkedin-outline.png'
+import github from '../../images/logos/social-github-outline.png'
+import twitterWhite from '../../images/logos/twitter-white.png'
+import linkedinWhite from '../../images/logos/linkedin-white.png'
+import githubWhite from '../../images/logos/github-white.png'
 
 import {
     ContactCardLeftWrapper,

@@ -1,11 +1,11 @@
-import gatsbylogo from "../../logos/gatsby.png";
-import reactlogo from "../../logos/react.png";
-import sclogo from "../../logos/styled-components.png";
-import liftJournal from "../../images/lift-journal.png";
-import todo from "../../images/react-todo.png";
-import tippr from "../../images/tippr.png"
-import retaino from "../../images/retaino.png"
-import pakdev from "../../images/pakdev.png"
+import gatsbylogo from "../../images/logos/gatsby.png";
+import reactlogo from "../../images/logos/react.png";
+import sclogo from "../../images/logos/styled-components.png";
+import liftJournal from "../../images/screenshots/lift-journal.png";
+import todo from "../../images/screenshots/react-todo.png";
+import tippr from "../../images/screenshots/tippr.png"
+import retaino from "../../images/screenshots/retaino.png"
+import pakdev from "../../images/screenshots/pakdev.png"
 
 export const carouselData = [
     {
