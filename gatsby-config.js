@@ -12,7 +12,7 @@ module.exports = {
       options: {
         name: `images`,
         icon: `src/images/profile.jpg`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -29,14 +29,15 @@ module.exports = {
         icon: `src/images/profile.jpg`, // This path is relative to the root of the site.
       },
     },
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // 'gatsby-plugin-offline',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-137907904-1",
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // 'gatsby-plugin-offline',
+    `gatsby-transformer-remark`,
   ],
 }
