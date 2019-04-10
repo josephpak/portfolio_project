@@ -17,7 +17,7 @@ import {
   useTheme
 } from "../../hooks/darkMode"
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   const themeState = useTheme()
 
   return (
