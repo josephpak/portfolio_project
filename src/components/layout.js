@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { StaticQuery, graphql } from "gatsby";
 
 import Header from "./Header/Header"
 import "./reset.css"
@@ -27,40 +26,26 @@ const Layout = ({ children }) => {
   }
 
   return (
-    <StaticQuery
-      query={graphql`
-        query SiteTitleQuery {
-          site {
-            siteMetadata {
-              title
-            }
-          }
-        }
-      `}
-      render={data => (
-        <ThemeContext.Provider
-          value={{
-            dark: themeState.dark,
-            toggle: toggle
-          }}
-        >
-          <SiteWrapper dark={themeState.dark}>
-              <Header />
-              <ThemeContext.Provider
-                value={{
-                  dark: themeState.dark,
-                  toggle: toggle
-                }}
-              >
-              {children}
-              </ThemeContext.Provider>
-          </SiteWrapper>
-        </ThemeContext.Provider>
-      )}
-    />
+    <ThemeContext.Provider
+      value={{
+        dark: themeState.dark,
+        toggle: toggle
+      }}
+    >
+      <SiteWrapper dark={themeState.dark}>
+          <Header />
+          <ThemeContext.Provider
+            value={{
+              dark: themeState.dark,
+              toggle: toggle
+            }}
+          >
+          {children}
+          </ThemeContext.Provider>
+      </SiteWrapper>
+    </ThemeContext.Provider>
   )
-  
-}
+          }  
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
