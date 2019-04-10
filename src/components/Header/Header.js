@@ -18,10 +18,9 @@ import {
 } from "../../hooks/darkMode"
 
 const Header = () => {
-  const themeState = useTheme()
+  const themeState = useTheme();
 
   return (
-    
     <HeaderContainer>
       <NightModeContainer>
       <img src={themeState.dark ? sun : moon} alt="Dark Mode button" onClick={e =>  themeState.toggle()}/>
@@ -35,7 +34,6 @@ const Header = () => {
       </HeaderContent>
     </HeaderContainer>
   )
-  
 }
 
 Header.propTypes = {
