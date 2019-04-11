@@ -42,8 +42,6 @@ export const HeaderContent = styled.div`
     height: 100%;
   }
 
-  
-
   p {
     padding: 0 25px;
     line-height: 2;
@@ -79,7 +77,9 @@ export const darkModeLogoStyle = {
 
 export const profilePictureStyle = {
     height: '100px',
+    width: '100px',
     minWidth: '100px',
+    minHeight: '100px',
     margin: '0 50px',
     borderRadius: '50%',
 }
