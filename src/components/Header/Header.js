@@ -27,7 +27,7 @@ const Header = () => {
     query {
       profile: file(relativePath: { eq: "images/profile.jpg" }) {
         childImageSharp {
-          fixed(width: 100, height: 100) {
+          fixed(width: 200, height: 200) {
               ...GatsbyImageSharpFixed
           }
         }
