@@ -35,8 +35,6 @@ const Header = () => {
     }  
   `)
 
-  const profile = data.profile.childImageSharp.fixed
-
   return (
     <HeaderContainer>
       <NightModeContainer>
@@ -50,7 +48,7 @@ const Header = () => {
       <HeaderContent dark={themeState.dark}>
         <NavBar dark={themeState.dark}/>
         <Image 
-          fixed={profile} 
+          fixed={data.profile.childImageSharp.fixed} 
           alt="profile-pic"
           style={profilePictureStyle}
         />
