@@ -42,13 +42,7 @@ export const HeaderContent = styled.div`
     height: 100%;
   }
 
-  img {
-    height: 100px;
-    min-width: 100px;
-    margin: 0 50px;
-
-
-  }
+  
 
   p {
     padding: 0 25px;
@@ -72,13 +66,20 @@ export const NightModeContainer = styled.div`
   display: flex;
   width: 100%;
   justify-content: flex-end;
-
-  img {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-  }
 `
+
+export const darkModeLogoStyle = {
+  width: '25px',
+  height: '25px',
+  position: 'absolute',
+  top: '20px',
+  right: '20px',
+  cursor: 'pointer',
+}
+
+export const profilePictureStyle = {
+    height: '100px',
+    minWidth: '100px',
+    margin: '0 50px',
+    borderRadius: '50%',
+}
