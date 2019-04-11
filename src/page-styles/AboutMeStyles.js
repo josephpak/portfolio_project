@@ -57,6 +57,7 @@ export const ContactCardLeftWrapper = styled.div`
     justify-content: flex-start;
     flex-direction: column;
     background-color: ${props => props.dark ? gray : "#1F4955"};
+    height: 550px;
 
     @media ${mobile} {
         width: 100%;
@@ -105,3 +106,6 @@ export const ContactCardRight = styled.div`
     }
 `
 
+export const rockClimbStyle = {
+    width: '100%'
+}
