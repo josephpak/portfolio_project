@@ -1,4 +1,5 @@
 import React from 'react'
+import 'antd/dist/antd.css';
 import Timeline from "antd/lib/timeline"
 
 import {
