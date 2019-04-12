@@ -99,6 +99,7 @@ export const ContactCardRight = styled.div`
 
     @media ${mobile} {
         width: 100%;
+        display: none;
     }
 
     img {
