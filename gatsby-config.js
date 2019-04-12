@@ -5,18 +5,6 @@ module.exports = {
     author: `@josephpak`,
   },
   plugins: [
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        icon: `src/images/profile.jpg`,
-        path: `${__dirname}/src/`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -29,19 +17,33 @@ module.exports = {
         icon: `src/images/profile.jpg`, // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-137907904-1",
       },
     },
-    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         displayName: true,
       },
     },
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        icon: `src/images/profile.jpg`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sharp`,
+    'gatsby-plugin-offline',
+
+    `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`, 
+    `gatsby-transformer-json`,
   ],
 }
