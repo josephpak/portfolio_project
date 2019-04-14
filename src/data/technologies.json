@@ -1,0 +1,14 @@
+[
+    {
+        "id": "React",
+        "techImage": "/images/logos/react.png"
+    },
+    {
+        "id": "Gatsby",
+        "techImage": "/images/logos/gatsby.png"
+    },
+    {
+        "id": "Styled-Components",
+        "techImage": "/images/logos/styled-components.png"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+      "image": "/images/screenshots/retaino.png",
+      "title": "Retaino",
+      "description": "Your personal Pensieve for the Internet",
+      "technologies": ["React", "Styled-Components"]
+    },
+    {
+      "image": "/images/screenshots/pakdev.png",
+      "title": "joepak.dev",
+      "description": "My personal website and portfolio",
+      "technologies": ["Gatsby", "React", "Styled-Components"]
+    },
+    {
+      "image": "/images/screenshots/tippr.png",
+      "title": "tippr",
+      "description": "A tipping app for waiters",
+      "technologies": ["React", "Styled-Components"]
+    },
+    {
+      "image": "/images/screenshots/lift-journal.png",
+      "title": "Lift Journal",
+      "description": "A weightlifting journal app",
+      "technologies": ["React", "Styled-Components"]
+    },
+    {
+      "image": "/images/screenshots/",
+      "title": "React To-Do App",
+      "description": "A simple to-do application",
+      "technologies": ["React", "Styled-Components"]
+    }
+]

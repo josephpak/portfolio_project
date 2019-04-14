@@ -45,4 +45,7 @@ module.exports = {
     `gatsby-transformer-remark`, 
     `gatsby-transformer-json`,
   ],
+  mapping: {
+    'ProjectsJson.technologies': `TechnologiesJson`
+  }
 }
