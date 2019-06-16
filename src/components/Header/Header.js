@@ -53,7 +53,7 @@ const Header = () => {
           style={profilePictureStyle}
         />
         <p>
-          Hi! I’m Joe. I was most recently a product manager at FiscalNote where I led research and development for the company’s relationship management software and data products.
+          Hi! I’m Joe. I'm currently a Product Manager at Samsara - where I help organizations across the world leverage technologies like sensors, computer vision and software to make fleets safer and more efficient.
         </p>
       </HeaderContent>
     </HeaderContainer>

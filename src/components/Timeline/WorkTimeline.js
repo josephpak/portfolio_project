@@ -16,7 +16,6 @@ export default function WorkTimeline() {
   return (
     <TimelineWrapper dark={themeState.dark}>
       <Timeline
-          pending="My next adventure"
           reverse="true"
       >
           <Timeline.Item
@@ -28,7 +27,10 @@ export default function WorkTimeline() {
           >FiscalNote <br /> Product Manager</Timeline.Item>
           <Timeline.Item
           color="red"
-          >Lambda School <br /> Full Stack Web Development 2019</Timeline.Item>
+          >Lambda School <br /> Full Stack Web Development</Timeline.Item>
+          <Timeline.Item
+          color="blue"
+          >Samsara <br /> Product Manager</Timeline.Item>
       </Timeline>
     </TimelineWrapper>
   )

@@ -3,6 +3,7 @@ module.exports = {
     title: `Joe Pak`,
     description: `Hi, I'm Joe Pak. This is my personal portfolio site.`,
     author: `@josephpak`,
+    image: `src/images/profile.jpg`
   },
   plugins: [
     {
