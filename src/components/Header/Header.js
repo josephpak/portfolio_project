@@ -12,8 +12,8 @@ import {
   HeaderContainer,
   HeaderContent,
   NightModeContainer,
-  darkModeLogoStyle,
-  profilePictureStyle
+  profilePictureStyle,
+  darkModeLogo
 } from "./HeaderStyles"
 
 import {
@@ -37,13 +37,17 @@ const Header = () => {
 
   return (
     <HeaderContainer>
-      <NightModeContainer>
+      <NightModeContainer 
+      dark={themeState.dark}      
+      alt="Dark Mode button" 
+      onClick={e =>  themeState.toggle()}> 
+      <p
+      >{themeState.dark ? "Light" : "Dark"}</p>
       <img
         src={themeState.dark ? sun : moon} 
-        alt="Dark Mode button" 
-        onClick={e =>  themeState.toggle()}
-        style={darkModeLogoStyle}
-      />
+
+      >  
+      </img>
       </NightModeContainer>
       <HeaderContent dark={themeState.dark}>
         <NavBar dark={themeState.dark}/>
@@ -53,7 +57,7 @@ const Header = () => {
           style={profilePictureStyle}
         />
         <p>
-          Hi! I’m Joe. I'm currently a Product Manager at Samsara - where I help organizations across the world leverage technologies like sensors, computer vision and software to make fleets safer and more efficient.
+          Hi! I’m Joe. I'm currently a Product Manager at <a href="https://p72.vc" target= "_blank">Point72 <span>Ventures</span></a> - where I am helping entrepreneurs and visionary founders build the best AI and ML businesses.
         </p>
       </HeaderContent>
     </HeaderContainer>

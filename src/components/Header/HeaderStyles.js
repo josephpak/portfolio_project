@@ -27,8 +27,6 @@ export const HeaderContainer = styled.div`
 `
 
 export const HeaderContent = styled.div`
-  @import url('https://fonts.googleapis.com/css?family=Poppins');
-  /* border: 1px solid black; */
   margin: 0 95px;
   width: 100%;
   height: 150px;
@@ -40,6 +38,17 @@ export const HeaderContent = styled.div`
     flex-direction: column;
     margin: 0;
     height: 100%;
+  }
+
+  a {
+    color: #3e4981;
+    span {
+      color: #eb4d96;
+    }
+  }
+
+  a:hover {
+    color: #3e4981;
   }
 
   p {
@@ -62,18 +71,26 @@ export const HeaderContent = styled.div`
 
 export const NightModeContainer = styled.div`
   display: flex;
-  width: 100%;
-  justify-content: flex-end;
-`
+  justify-content: space-between;
+  align-items: center;
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  width: 5.3%;
+  color: ${props => props.dark ? white : black};
+  cursor: pointer;
 
-export const darkModeLogoStyle = {
-  width: '25px',
-  height: '25px',
-  position: 'absolute',
-  top: '20px',
-  right: '20px',
-  cursor: 'pointer',
-}
+  p {
+    padding-top: 6px;
+    font-family: Feijoa;
+    font-size: 18px;
+  }
+
+  img {
+    width: 25px;
+    height: 25px;
+  }
+`
 
 export const profilePictureStyle = {
     height: '100px',

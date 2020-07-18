@@ -21,15 +21,15 @@ const libraryData = [
         "status": "reading"
     },
     {
-        "title": "Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days",
-        "author": "Jake Knapp",
-        "link": "https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/150112174X",
+        "title": "Trick Mirror: Reflections on Self-Delusion",
+        "author": "Jia Tolentino",
+        "link": "https://www.amazon.com/Trick-Mirror-Self-Delusion-Jia-Tolentino/dp/0525510540",
         "status": "reading"
     },
     {
-        "title": "Bad Blood",
-        "author": "John Carreyrou",
-        "link": "https://www.amazon.com/Bad-Blood-Secrets-Silicon-Startup/dp/152473165X",
+        "title": "The Master Algorithm",
+        "author": "Pedro Domingos",
+        "link": "https://www.amazon.com/dp/0465094279/ref=cm_sw_em_r_mt_dp_U_ocQeFb3SYF3R5",
         "status": "read"
     }
 ]

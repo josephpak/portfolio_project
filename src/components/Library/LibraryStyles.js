@@ -12,7 +12,7 @@ import {
 } from "../Misc/darkmode-colors"
 
 export const Book = styled.div`
-    border: 2px solid ${props => props.dark ? gray : "blue"};
+    border: 2px solid ${props => props.dark ? gray : "#D3A722"};
     width: 100%;
     height: 70px;
     border-radius: 10px;
@@ -24,12 +24,12 @@ export const Book = styled.div`
     margin: 10px 0;
 
     a {
-        color: ${props => props.dark ? gray : "blue"};
+        color: ${props => props.dark ? gray : "#1E3756"};
     }
 `
 
 export const Article = styled.div`
-    border: 2px solid ${props => props.dark ? gray : "brown"};
+    border: 2px solid ${props => props.dark ? gray : "#D3A722"};
     width: 100%;
     height: 70px;
     border-radius: 10px;
@@ -41,11 +41,12 @@ export const Article = styled.div`
     margin: 10px 0;
 
     a {
-        color: ${props => props.dark ? gray : "brown"};
+        color: ${props => props.dark ? gray : "#A23030"};
     }
 `
 
 export const BooksWrapper = styled.div`
+
     width: 45%;
     margin-right: 5px;
 
@@ -53,7 +54,7 @@ export const BooksWrapper = styled.div`
         width: 20%;
         text-align: left;
         margin-left: 0;
-        border-color: ${props => props.dark ? gray : "blue"};
+        border-color: ${props => props.dark ? gray : "#1E3756"};
         border-width: 2px;
     }
 `
@@ -65,7 +66,7 @@ export const NewsStand = styled.div`
         width: 20%;
         text-align: left;
         margin-left: 0;
-        border-color: ${props => props.dark ? gray : "brown"};
+        border-color: ${props => props.dark ? gray : "#A23030"};
         border-width: 2px;
     }
 `
