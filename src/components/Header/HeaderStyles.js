@@ -74,7 +74,7 @@ export const NightModeContainer = styled.div`
   position: absolute;
   display: flex;
   justify-content: space-between;
-  width: 78px;
+  width: 75px;
   color: ${props => props.dark ? white : black};
   cursor: pointer;
 
