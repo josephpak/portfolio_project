@@ -72,10 +72,6 @@ export const NewsStand = styled.div`
 `
 
 export const LibraryWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-
     @media ${mobile} {
         width: 100%;
         display: flex;
@@ -86,6 +82,10 @@ export const LibraryWrapper = styled.div`
     @media ${tablet} {
         width: 100%;
     }
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
 
     h1 {
         font-family: Feijoa;

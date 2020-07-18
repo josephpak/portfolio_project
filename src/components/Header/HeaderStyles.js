@@ -11,7 +11,6 @@ import {
 } from "../Misc/darkmode-colors"
 
 export const HeaderContainer = styled.div`
-  /* border: 2px dotted black; */
   height: 400px;
   display: flex;
   align-items: center;
@@ -71,17 +70,24 @@ export const HeaderContent = styled.div`
 
 export const NightModeContainer = styled.div`
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   top: 20px;
   right: 20px;
   position: absolute;
-  width: 5.3%;
+  width: 75px;
   color: ${props => props.dark ? white : black};
   cursor: pointer;
 
+  @media ${mobile} {
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+  }
+
   p {
-    padding-top: 6px;
+    padding-top: 7px;
     font-family: Feijoa;
     font-size: 18px;
   }
