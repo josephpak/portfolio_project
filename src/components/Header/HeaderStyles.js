@@ -41,7 +41,7 @@ export const HeaderContent = styled.div`
 
   a {
     color: #3e4981;
-    div {
+    span {
       color: #eb4d96;
     }
   }
