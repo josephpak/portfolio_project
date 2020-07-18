@@ -7,13 +7,13 @@
   "dependencies": {
     "antd": "^3.16.1",
     "babel-plugin-styled-components": "^1.10.0",
-    "gatsby": "^2.3.3",
+    "gatsby": "^2.24.4",
     "gatsby-image": "^2.0.37",
     "gatsby-plugin-google-analytics": "^2.0.18",
     "gatsby-plugin-manifest": "^2.0.25",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.11",
-    "gatsby-plugin-sharp": "^2.0.32",
+    "gatsby-plugin-sharp": "2.2.12",
     "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-transformer-json": "^2.1.11",
@@ -43,6 +43,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/josephpak/portfolio_project.git"
+  },
+  "resolutions": {
+    "sharp": "0.22.1"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
