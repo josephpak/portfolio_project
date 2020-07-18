@@ -69,6 +69,7 @@ export const HeaderContent = styled.div`
 ` 
 
 export const NightModeContainer = styled.div`
+  border: 3px solid white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -76,14 +77,12 @@ export const NightModeContainer = styled.div`
   top: 20px;
   right: 20px;
   position: absolute;
-  width: 75px;
+  width: 78px;
   color: ${props => props.dark ? white : black};
   cursor: pointer;
 
   @media ${mobile} {
     flex-direction: column;
-    margin: 0;
-    height: 100%;
   }
 
   p {

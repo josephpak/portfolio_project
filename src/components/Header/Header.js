@@ -13,7 +13,6 @@ import {
   HeaderContent,
   NightModeContainer,
   profilePictureStyle,
-  darkModeLogo
 } from "./HeaderStyles"
 
 import {
@@ -57,7 +56,7 @@ const Header = () => {
           style={profilePictureStyle}
         />
         <p>
-          Hi! I’m Joe. I'm currently a Product Manager at <a href="https://p72.vc" target= "_blank">Point72 <span>Ventures</span></a> - where I am helping entrepreneurs and visionary founders build the best AI and ML businesses.
+          Hi! I’m Joe. I'm currently a Product Manager at Point72 Ventures - where I am helping entrepreneurs and visionary founders build the best AI and ML businesses.
         </p>
       </HeaderContent>
     </HeaderContainer>
