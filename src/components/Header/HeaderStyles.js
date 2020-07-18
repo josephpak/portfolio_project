@@ -41,7 +41,7 @@ export const HeaderContent = styled.div`
 
   a {
     color: #3e4981;
-    span {
+    div {
       color: #eb4d96;
     }
   }
@@ -69,10 +69,11 @@ export const HeaderContent = styled.div`
 ` 
 
 export const NightModeContainer = styled.div`
-  border: 3px solid black;
   top: 20px;
   right: 20px;
   position: absolute;
+  display: flex;
+  justify-content: space-between;
   width: 78px;
   color: ${props => props.dark ? white : black};
   cursor: pointer;
