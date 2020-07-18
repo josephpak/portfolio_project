@@ -19,18 +19,20 @@ export default function WorkTimeline() {
           reverse="true"
       >
           <Timeline.Item
-          color="crimson"
+          color="coral"
           ><span>Harvard College</span> <br /> A.B. 2014</Timeline.Item>
-          <Timeline.Item>Market Metrics, FactSet <br /> Data Product Analyst</Timeline.Item>
           <Timeline.Item
-          color="purple"
-          >FiscalNote <br /> Product Manager</Timeline.Item>
+          color="teal"
+          >Market Metrics, FactSet <br /> Data Product Analyst</Timeline.Item>
           <Timeline.Item
-          color="red"
-          >Lambda School <br /> Full Stack Web Development</Timeline.Item>
+          color="coral"
+          >FiscalNote <br />Product Manager</Timeline.Item>
           <Timeline.Item
-          color="blue"
+          color="teal"
           >Samsara <br /> Product Manager</Timeline.Item>
+          <Timeline.Item
+          color="coral"
+          >Point72 Ventures <br /> Product Manager</Timeline.Item>
       </Timeline>
     </TimelineWrapper>
   )
