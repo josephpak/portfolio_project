@@ -56,7 +56,7 @@ const Header = () => {
           style={profilePictureStyle}
         />
         <p>
-          Hi! I’m Joe. I'm currently a Product Manager at <a href="https://p72.vc" targe="_blank">Point72<span>Ventures</span></a> - where I am helping entrepreneurs and visionary founders build world-class AI and ML businesses.
+          Hi! I’m Joe. I'm currently a Product Manager at <a href="https://p72.vc" targe="_blank">Point72<span> Ventures</span></a> - where I am helping entrepreneurs and visionary founders build world-class AI and ML businesses.
         </p>
       </HeaderContent>
     </HeaderContainer>
