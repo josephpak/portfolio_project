@@ -91,7 +91,6 @@ export const LibraryWrapper = styled.div`
         font-family: Feijoa;
         font-size: 1.5rem;
         padding-bottom: 20px;
-
         color: ${props => props.dark ? white : black};
 
         @media ${mobile} {
